@@ -44,6 +44,8 @@
 // filter() filetr according the condition
 // reduce()processing the entire and taking one
 // sort()
+// reverse()
+// join()
 // var arr=[10,20,30,40,20,10,50,50]
 
 // function square(n1){
@@ -85,9 +87,21 @@
 // console.log(arr);
 
 
+// var total=arr.reduce((n1,n2)=>String(n1)+String(n2))
+
 var arr=[8,70,9,1]
 
-var number=arr.sort()
-
-var total=number.reverse((n1,n2)=>String(n1)+String(n2))
+var total=arr.sort().reverse().join("")
 console.log(total);
+
+
+// include for checking it exist
+
+if(arr.includes(100)){
+    console.log("found");
+}
+else{
+    console.log("not found");
+}
+
+
